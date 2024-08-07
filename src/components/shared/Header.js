@@ -12,7 +12,15 @@ const BsNavLink = (props) => {
   );
 };
 
-const LoginLink = () => <span className="nav-link port-navbar-link">Login</span>;
+const BsNavBrand = () => (
+  <div className="navbar-brand">
+    <Link href="/" className="port-navbar-brand">
+      Yohanes Hubert
+    </Link>
+  </div>
+);
+
+const LoginLink = () => <BsNavLink href="/api/v1/login" title="Login" />;
 
 const LogoutLink = () => <span className="nav-link port-navbar-link">Logout</span>;
 
@@ -24,11 +32,7 @@ const Header = () => {
   return (
     <div>
       <Navbar className="port-navbar port-default absolute" color="transparent" dark expand="md">
-        <div className="navbar-brand">
-          <Link href="/" className="port-navbar-brand">
-            Yohanes Hubert
-          </Link>
-        </div>
+        <BsNavBrand />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
