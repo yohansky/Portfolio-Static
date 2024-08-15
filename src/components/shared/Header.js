@@ -24,14 +24,14 @@ const LoginLink = () => <BsNavLink href="/api/v1/login" title="Login" />;
 
 const LogoutLink = () => <span className="nav-link port-navbar-link">Logout</span>;
 
-const Header = () => {
+const Header = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   // console.log("Header render", { isOpen }); // Debugging log
 
   return (
     <div>
-      <Navbar className="port-navbar port-default absolute" color="transparent" dark expand="md">
+      <Navbar className={`port-navbar port-default absolute ${className}`} dark expand="md">
         <BsNavBrand />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

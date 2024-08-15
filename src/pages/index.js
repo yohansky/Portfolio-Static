@@ -8,7 +8,7 @@ const roles = ["Web Developer", "Full Stack Web", "Golang Developer", "Next JS",
 class Index extends React.Component {
   render() {
     return (
-      <BaseLayout className="cover">
+      <BaseLayout className="cover" navClass="transparent">
         <div className="main-section">
           <div className="background-image">
             <img src="/images/background-index.png" />

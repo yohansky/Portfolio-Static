@@ -1,29 +1,52 @@
-import { useGetPost } from "@/actions";
 import BasePage from "@/components/BasePage";
 import BaseLayout from "@/components/layouts/BaseLayout";
+import PortfolioCard from "@/components/PortfolioCard";
+import PortfolioApi from "@/lib/api/portfolios";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { Row, Col } from "reactstrap";
 
-// const fetcher = (url) => axios.get(url).then((res) => res.data);
-const Portofolio = () => {
-  const { data, error, loading } = useGetPost();
-
-  const renderPosts = (posts) => {
-    return posts.map((post) => (
-      <li key={post.id}>
-        <Link href={`/portofolios/${post.id}`}>{post.title}</Link>
-      </li>
-    ));
-  };
+const Portofolios = ({ portfolios }) => {
+  const router = useRouter();
+  // const renderPortfolios = (portfolios) => {
+  //   return portfolios.map((portfolio) => (
+  //     <li key={portfolio._id} style={{ fontSize: "20px" }}>
+  //       <Link as={`/portfolios/${portfolio._id}`} href="/portfolios/[id]">
+  //         {portfolio.title}
+  //       </Link>
+  //     </li>
+  //   ));
+  // };
   return (
     <BaseLayout>
-      <BasePage>
-        <h1>I am Portofolio page</h1>
-        {loading && <p>Loading data...</p>}
-        {error && <div className="alert alert-danger">{error.message}</div>}
-        {data && <ul>{renderPosts(data)}</ul>}
+      <BasePage header="Portfolios" className="portfolio-page">
+        {/* {JSON.stringify(portfolios)} */}
+        {/* <ul>{renderPortfolios(portfolios)}</ul> */}
+        <Row>
+          {portfolios.map((portfolio) => (
+            <Col
+              key={portfolio._id}
+              md="4"
+              onClick={() => {
+                router.push("/portofolios/[id]", `/portofolios/${portfolio._id}`);
+              }}
+            >
+              <PortfolioCard portfolio={portfolio} />
+            </Col>
+          ))}
+        </Row>
       </BasePage>
     </BaseLayout>
   );
 };
 
-export default Portofolio;
+export async function getStaticProps() {
+  const json = await new PortfolioApi().getAll();
+  const portfolios = json.data;
+
+  return {
+    props: { portfolios },
+  };
+}
+
+export default Portofolios;
