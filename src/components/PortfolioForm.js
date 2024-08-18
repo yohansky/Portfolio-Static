@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import { useForm } from "react-hook-form";
 
-const PortfolioForm = () => {
+const PortfolioForm = ({ onSubmit }) => {
   const { register, handleSubmit, setValue } = useForm();
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
@@ -18,11 +18,7 @@ const PortfolioForm = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit((data) => {
-        // alert(JSON.stringify(data));
-      })}
-    >
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">
         <label htmlFor="title">Title</label>
         <input {...register("title")} name="title" type="text" className="form-control" id="title" />
