@@ -4,9 +4,9 @@ import PortfolioCard from "@/components/PortfolioCard";
 import PortfolioApi from "@/lib/api/portfolios";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Row, Col } from "reactstrap";
+import { Row, Col, Button } from "reactstrap";
 
-const Portofolios = ({ portfolios }) => {
+const Portfolios = ({ portfolios }) => {
   const router = useRouter();
   // const renderPortfolios = (portfolios) => {
   //   return portfolios.map((portfolio) => (
@@ -31,7 +31,14 @@ const Portofolios = ({ portfolios }) => {
                 router.push("/portofolios/[id]", `/portofolios/${portfolio._id}`);
               }}
             >
-              <PortfolioCard portfolio={portfolio} />
+              <PortfolioCard portfolio={portfolio}>
+                <>
+                  <Button className="mr-2" color="warning">
+                    Edit
+                  </Button>
+                  <Button color="danger">Delete</Button>
+                </>
+              </PortfolioCard>
             </Col>
           ))}
         </Row>
@@ -49,4 +56,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Portofolios;
+export default Portfolios;

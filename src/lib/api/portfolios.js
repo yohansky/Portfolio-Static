@@ -5,6 +5,10 @@ class PortfolioApi {
     this.apiUrl = process.env.PORTFOLIO_API_URL + "/portfolios";
   }
 
+  getById(id) {
+    return axios.get(`${this.apiUrl}/${id}`);
+  }
+
   getAll() {
     return axios.get(this.apiUrl);
   }
@@ -15,6 +19,10 @@ class PortfolioApi {
 
   createPortfolio(data) {
     return axios.post(this.apiUrl, data);
+  }
+
+  update(id, data) {
+    return axios.patch(`${this.apiUrl}/${id}`, data);
   }
 }
 
