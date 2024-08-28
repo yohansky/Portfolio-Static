@@ -1,12 +1,8 @@
-import { useGetPostById } from "@/actions";
 import BasePage from "@/components/BasePage";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import PortfolioApi from "@/lib/api/portfolios";
-import { useRouter } from "next/router";
 
 const Portfolio = ({ portfolio }) => {
-  // const router = useRouter();
-  // const { data: portofolio, loading } = useGetPostById(router.query.id);
   return (
     <BaseLayout>
       <BasePage header="Portfolio Detail">{JSON.stringify(portfolio)}</BasePage>

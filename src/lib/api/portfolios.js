@@ -24,6 +24,10 @@ class PortfolioApi {
   update(id, data) {
     return axios.patch(`${this.apiUrl}/${id}`, data);
   }
+
+  delete(id) {
+    return axios.delete(`${this.apiUrl}/${id}`);
+  }
 }
 
 export default PortfolioApi;

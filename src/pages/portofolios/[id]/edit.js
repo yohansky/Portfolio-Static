@@ -8,7 +8,6 @@ import { Col, Row } from "reactstrap";
 
 const PortfolioEdit = () => {
   const router = useRouter();
-  // const [updatePortfolio, { data, error, loading }] = useUpdatePortfolio();
   const { data: initialData } = useGetPortfolio(router.query.id);
   console.log(initialData);
 

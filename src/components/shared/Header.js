@@ -39,27 +39,27 @@ const Header = ({ className }) => {
             <NavItem className="port-navbar-item">
               <BsNavLink href="/" title="Home" />
             </NavItem>
-            <NavItem className="port-navbar-item">
+            {/* <NavItem className="port-navbar-item">
               <BsNavLink href="/about" title="About" />
-            </NavItem>
+            </NavItem> */}
             <NavItem className="port-navbar-item">
               <BsNavLink href="/portofolios" title="Portfolios" />
             </NavItem>
-            <NavItem className="port-navbar-item">
+            {/* <NavItem className="port-navbar-item">
               <BsNavLink href="/blogs" title="Blogs" />
-            </NavItem>
-            <NavItem className="port-navbar-item">
+            </NavItem> */}
+            {/* <NavItem className="port-navbar-item">
               <BsNavLink href="/cv" title="Cv" />
-            </NavItem>
+            </NavItem> */}
           </Nav>
-          <Nav navbar>
+          {/* <Nav navbar>
             <NavItem className="port-navbar-item clickable">
               <LoginLink />
             </NavItem>
             <NavItem className="port-navbar-item clickable">
               <LogoutLink />
             </NavItem>
-          </Nav>
+          </Nav> */}
         </Collapse>
       </Navbar>
     </div>
