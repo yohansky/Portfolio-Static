@@ -152,7 +152,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               <CardHeader className="portfolio-card-header">Backend</CardHeader>
               <CardBody>
                 <p className="portfolio-card-city">Fiber(Golang), MySQL, Docker</p>
-                <CardTitle className="portfolio-card-title">E-Commrce REST API</CardTitle>
+                <CardTitle className="portfolio-card-title">Untitle E-Commerce REST API</CardTitle>
                 <CardText className="portfolio-card-text">Work In Progress(WIP)</CardText>
               </CardBody>
             </Card>
