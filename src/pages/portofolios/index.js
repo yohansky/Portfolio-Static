@@ -140,7 +140,23 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               </CardBody>
             </Card>
           </Col>
-          {/*  */}
+          {/* Go React Docker (E-Commerce apps) */}
+          <Col
+            md="4"
+            onClick={() => {
+              window.location.href = "https://github.com/yohansky/Belajar-Docker2";
+            }}
+            style={{ cursor: "pointer" }}
+          >
+            <Card className="portfolio-card">
+              <CardHeader className="portfolio-card-header">Backend</CardHeader>
+              <CardBody>
+                <p className="portfolio-card-city">Fiber(Golang), MySQL, Docker</p>
+                <CardTitle className="portfolio-card-title">E-Commrce REST API</CardTitle>
+                <CardText className="portfolio-card-text">Work In Progress(WIP)</CardText>
+              </CardBody>
+            </Card>
+          </Col>
         </Row>
       </BasePage>
     </BaseLayout>
