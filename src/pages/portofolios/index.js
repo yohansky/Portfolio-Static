@@ -5,7 +5,7 @@ import PortfolioCard from "@/components/PortfolioCard";
 import PortfolioApi from "@/lib/api/portfolios";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { Row, Col, Button, Card, CardHeader, CardBody, CardTitle, CardText } from "reactstrap";
+import { Row, Col, Button, Card, CardHeader, CardBody, CardTitle, CardText, ListGroupItemHeading, List } from "reactstrap";
 
 const Portfolios = ({ portfolios: initialPortfolios }) => {
   const router = useRouter();
@@ -68,7 +68,13 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               <CardBody>
                 <p className="portfolio-card-city">Fiber(Golang), ReactJS, PostgreSQL</p>
                 <CardTitle className="portfolio-card-title">Blanja</CardTitle>
-                <CardText className="portfolio-card-text"></CardText>
+                <CardText className="portfolio-card-text">
+                  Tech Used :
+                  <ul>
+                    <li>JWT</li>
+                    <li>Migration</li>
+                  </ul>
+                </CardText>
               </CardBody>
             </Card>
           </Col>
@@ -85,7 +91,14 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               <CardBody>
                 <p className="portfolio-card-city">Fiber(Golang), ReactJS, PostgreSQL</p>
                 <CardTitle className="portfolio-card-title">Mama Recipe</CardTitle>
-                <CardText className="portfolio-card-text"></CardText>
+                <CardText className="portfolio-card-text">
+                  Tech Used :
+                  <ul>
+                    <li>Cloudinary</li>
+                    <li>JWT</li>
+                    <li>Migration</li>
+                  </ul>
+                </CardText>
               </CardBody>
             </Card>
           </Col>
@@ -102,7 +115,13 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               <CardBody>
                 <p className="portfolio-card-city">Fiber(Golang), NextJS, PostgreSQL</p>
                 <CardTitle className="portfolio-card-title">Peworld Hiring</CardTitle>
-                <CardText className="portfolio-card-text"></CardText>
+                <CardText className="portfolio-card-text">
+                  Tech Used :
+                  <ul>
+                    <li>JWT</li>
+                    <li>Migration</li>
+                  </ul>
+                </CardText>
               </CardBody>
             </Card>
           </Col>
@@ -119,7 +138,13 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               <CardBody>
                 <p className="portfolio-card-city">Laravel(PHP), MySQL</p>
                 <CardTitle className="portfolio-card-title">E-Commerce Laravel</CardTitle>
-                <CardText className="portfolio-card-text"></CardText>
+                <CardText className="portfolio-card-text">
+                  Tech Used :
+                  <ul>
+                    <li>Cloudinary</li>
+                    <li>Migration</li>
+                  </ul>
+                </CardText>
               </CardBody>
             </Card>
           </Col>
@@ -136,7 +161,11 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               <CardBody>
                 <p className="portfolio-card-city">ExpressJS, MongoDB</p>
                 <CardTitle className="portfolio-card-title">Express REST API</CardTitle>
-                <CardText className="portfolio-card-text"></CardText>
+                <CardText className="portfolio-card-text">
+                  <ul>
+                    <li>Migration</li>
+                  </ul>
+                </CardText>
               </CardBody>
             </Card>
           </Col>
