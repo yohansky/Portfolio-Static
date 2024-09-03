@@ -39,9 +39,9 @@ const Header = ({ className }) => {
             <NavItem className="port-navbar-item">
               <BsNavLink href="/" title="Home" />
             </NavItem>
-            {/* <NavItem className="port-navbar-item">
+            <NavItem className="port-navbar-item">
               <BsNavLink href="/about" title="About" />
-            </NavItem> */}
+            </NavItem>
             <NavItem className="port-navbar-item">
               <BsNavLink href="/portofolios" title="Portfolios" />
             </NavItem>

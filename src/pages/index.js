@@ -17,7 +17,7 @@ const Index = () => {
   const startAnimation = () => {
     flipInterval.current = setInterval(() => {
       setIsFlipping((prevFlipping) => !prevFlipping);
-    }, 2000);
+    }, 2500);
   };
 
   return (
@@ -47,7 +47,7 @@ const Index = () => {
                       <div className="hero-section-content-intro">Have a look at my portfolio and job history.</div>
                     </div>
                     <img className="image" src="/images/section-2.png" />
-                    <div className="shadow-custom">
+                    <div className="shadow-custom shadow-custom-orange">
                       <div className="shadow-inner"> </div>
                     </div>
                   </div>
