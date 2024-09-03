@@ -180,9 +180,20 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
             <Card className="portfolio-card">
               <CardHeader className="portfolio-card-header">Backend</CardHeader>
               <CardBody>
-                <p className="portfolio-card-city">Fiber(Golang), MySQL, Docker</p>
+                <p className="portfolio-card-city">Fiber(Golang), MySQL</p>
                 <CardTitle className="portfolio-card-title">Untitle E-Commerce REST API</CardTitle>
-                <CardText className="portfolio-card-text">Work In Progress(WIP)</CardText>
+                <CardText className="portfolio-card-text">
+                  Work In Progress(WIP) <br />
+                  Tech Used :
+                  <ul>
+                    <li>Docker</li>
+                    <li>Migration</li>
+                    <li>JWT</li>
+                    <li>Redis</li>
+                    <li>Stripe</li>
+                    <li>SMTP</li>
+                  </ul>
+                </CardText>
               </CardBody>
             </Card>
           </Col>
