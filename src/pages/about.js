@@ -32,7 +32,7 @@ const About = () => {
           </Col>
           <Col md="6">
             <div className={`${createFadeIn()}`}>
-              <p>My name is Yohanes Hubert and I am an software engineer and freelance developer. </p>
+              <p>My name is Yohanes Hubert and I am an Software Engineer and Golang Developer. </p>
               <p>
                 Hi there! I'm Yohanes Hubert, a passionate and dedicated backend developer specializing in Golang with a strong background in building robust and scalable web applications. I hold a Bachelor's degree in Computer Engineering
                 from Indraprasta PGRI University, Jakarta, and I am a proud graduate of Pijar Camp where I honed my skills in Golang and ReactJS.
