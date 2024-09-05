@@ -193,6 +193,15 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>Stripe</li>
                     <li>SMTP</li>
                   </ul>
+                  Features :
+                  <ul>
+                    <li>Creating an extensive backend with FIber</li>
+                    <li>Working with a MySQL database andd GORM</li>
+                    <li>JWT authentication with HTTP-Only cookie</li>
+                    <li>Creating custom authentication middleware</li>
+                    <li>Integrating the Stripe API</li>
+                    <li>SMTP & Much more!</li>
+                  </ul>
                 </CardText>
               </CardBody>
             </Card>
