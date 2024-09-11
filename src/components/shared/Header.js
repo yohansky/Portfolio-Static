@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
+import ActiveLink from "./ActiveLink";
 
 const BsNavLink = (props) => {
   const { href, title } = props;
   // console.log("BsNavLink render", { href, title }); // Debugging log
   return (
-    <Link href={href} className="nav-link port-navbar-link">
-      {title}
-    </Link>
+    <ActiveLink activeClassName="active" href={href}>
+      <span className="nav-link port-navbar-link">{title}</span>
+    </ActiveLink>
   );
 };
 
