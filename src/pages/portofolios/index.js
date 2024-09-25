@@ -206,6 +206,29 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               </CardBody>
             </Card>
           </Col>
+          {/* Rest API SpringBoot Mysql */}
+          <Col
+            md="4"
+            onClick={() => {
+              window.location.href = "https://github.com/yohansky/SpringBoot-Backend-ems";
+            }}
+            style={{ cursor: "pointer" }}
+          >
+            <Card className="portfolio-card">
+              <CardHeader className="portfolio-card-header">Backend</CardHeader>
+              <CardBody>
+                <p className="portfolio-card-city">Spring Boot, MySQL</p>
+                <CardTitle className="portfolio-card-title">Employee Management System </CardTitle>
+                <CardText className="portfolio-card-text">
+                  <ul>
+                    <li>Migration</li>
+                    <li>Rest API</li>
+                    <li>Relation</li>
+                  </ul>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Col>
         </Row>
       </BasePage>
     </BaseLayout>
