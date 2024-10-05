@@ -40,8 +40,8 @@ const About = () => {
                 React and Angular. */}
               </p>
               <p>
-                Throughout my journey, I have worked on various projects, ranging from full-stack web applications to complex backend systems. My experience includes working with the Fiber framework, PostgreSQL, and implementing security
-                features such as JWT. I am also proficient in database optimization and seamless integration between frontend and backend components.
+                Throughout my journey, I have worked on various projects, ranging from full-stack web applications to complex backend systems. My experience includes working with the Fiber golang framework, PostgreSQL, and implementing
+                security features such as JWT. I am also proficient in database optimization and seamless integration between frontend and backend components.
               </p>
               <p>
                 I thrive in environments that challenge me to learn and grow, and I am always eager to dive into new technologies. My goal is to contribute to innovative projects where I can leverage my skills and collaborate with
