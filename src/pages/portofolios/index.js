@@ -229,6 +229,30 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               </CardBody>
             </Card>
           </Col>
+          {/* MERN E-Commerce */}
+          <Col
+            md="4"
+            onClick={() => {
+              window.location.href = "https://github.com/yohansky/MERN-ecom";
+            }}
+            style={{ cursor: "pointer" }}
+          >
+            <Card className="portfolio-card">
+              <CardHeader className="portfolio-card-header">Full Stack</CardHeader>
+              <CardBody>
+                <p className="portfolio-card-city">Express.JS, React.JS, MongoDB</p>
+                <CardTitle className="portfolio-card-title">ProShop</CardTitle>
+                <CardText className="portfolio-card-text">
+                  Work In Progress(WIP) <br />
+                  Tech Used :
+                  <ul>
+                    <li>SPA(Single Page Application)</li>
+                    <li>Migration</li>
+                  </ul>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Col>
         </Row>
       </BasePage>
     </BaseLayout>

@@ -36,8 +36,6 @@ const About = () => {
               <p>
                 Hi there! I'm Yohanes Hubert, a passionate and dedicated backend developer specializing in Golang with a strong background in building robust and scalable web applications. I hold a Bachelor's degree in Computer Engineering
                 from Indraprasta PGRI University, Jakarta, and I am a proud graduate of Pijar Camp where I honed my skills in Golang and ReactJS.
-                {/* I have a Master's degree in Artificial Intelligence and several years of experience working on a wide range of technologies and projects from C++ development for ultrasound devices to modern mobile and web applications in
-                React and Angular. */}
               </p>
               <p>
                 Throughout my journey, I have worked on various projects, ranging from full-stack web applications to complex backend systems. My experience includes working with the Fiber golang framework, PostgreSQL, and implementing
