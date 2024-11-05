@@ -254,6 +254,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
             </Card>
           </Col>
         </Row>
+        <h1>Work In Progress</h1>
       </BasePage>
     </BaseLayout>
   );
