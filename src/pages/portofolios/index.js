@@ -229,6 +229,9 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               </CardBody>
             </Card>
           </Col>
+        </Row>
+        <h1 className="page-header-title">Work In Progress</h1>
+        <Row>
           {/* MERN E-Commerce */}
           <Col
             md="4"
@@ -254,7 +257,6 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
             </Card>
           </Col>
         </Row>
-        <h1 className="page-header-title">Work In Progress</h1>
       </BasePage>
     </BaseLayout>
   );
