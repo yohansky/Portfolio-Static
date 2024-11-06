@@ -206,7 +206,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                 <p className="portfolio-card-city">Fiber(Golang), MySQL</p>
                 <CardTitle className="portfolio-card-title">Untitle E-Commerce REST API</CardTitle>
                 <CardText className="portfolio-card-text">
-                  Work In Progress(WIP) <br />
+                  {/* Work In Progress(WIP) <br /> */}
                   Tech Used :
                   <ul>
                     <li>Docker</li>
