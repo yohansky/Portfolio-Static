@@ -1,21 +1,34 @@
-import { deletePortfolio } from "@/actions/portfolio";
-import BasePage from "@/components/BasePage";
-import BaseLayout from "@/components/layouts/BaseLayout";
-import PortfolioCard from "@/components/PortfolioCard";
-import PortfolioApi from "@/lib/api/portfolios";
-import { useRouter } from "next/router";
-import { useState } from "react";
-import { Row, Col, Button, Card, CardHeader, CardBody, CardTitle, CardText, ListGroupItemHeading, List } from "reactstrap";
+import { deletePortfolio } from '@/actions/portfolio';
+import BasePage from '@/components/BasePage';
+import BaseLayout from '@/components/layouts/BaseLayout';
+import PortfolioCard from '@/components/PortfolioCard';
+import PortfolioApi from '@/lib/api/portfolios';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+import {
+  Row,
+  Col,
+  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  CardTitle,
+  CardText,
+  ListGroupItemHeading,
+  List,
+} from 'reactstrap';
 
 const Portfolios = ({ portfolios: initialPortfolios }) => {
   const router = useRouter();
   const [portfolios, setPortfolios] = useState(initialPortfolios);
   const _deletePortfolio = async (e, portfolioId) => {
     e.stopPropagation();
-    const isConfirm = confirm("Are you sure you want to delete this portfolio?");
+    const isConfirm = confirm(
+      'Are you sure you want to delete this portfolio?'
+    );
     if (isConfirm) {
       await deletePortfolio(portfolioId);
-      setPortfolios(portfolios.filter((p) => p._id !== portfolioId));
+      setPortfolios(portfolios.filter(p => p._id !== portfolioId));
     }
   };
 
@@ -58,15 +71,20 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
             //   router.push("/portofolios/[id]", `/portofolios/${portfolio._id}`);
             // }}
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/Fe-Blanja-React";
+              window.location.href =
+                'https://github.com/yohansky/Fe-Blanja-React';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             {/* <PortfolioCard /> */}
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">Fullstack Web</CardHeader>
+              <CardHeader className="portfolio-card-header">
+                Fullstack Web
+              </CardHeader>
               <CardBody>
-                <p className="portfolio-card-city">Fiber(Golang), ReactJS, PostgreSQL</p>
+                <p className="portfolio-card-city">
+                  Fiber(Golang), ReactJS, PostgreSQL
+                </p>
                 <CardTitle className="portfolio-card-title">Blanja</CardTitle>
                 <CardText className="portfolio-card-text">
                   Tech Used :
@@ -82,15 +100,22 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/Fe-Food-Recipe";
+              window.location.href =
+                'https://github.com/yohansky/Fe-Food-Recipe';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">Fullstack Web</CardHeader>
+              <CardHeader className="portfolio-card-header">
+                Fullstack Web
+              </CardHeader>
               <CardBody>
-                <p className="portfolio-card-city">Fiber(Golang), ReactJS, PostgreSQL</p>
-                <CardTitle className="portfolio-card-title">Mama Recipe</CardTitle>
+                <p className="portfolio-card-city">
+                  Fiber(Golang), ReactJS, PostgreSQL
+                </p>
+                <CardTitle className="portfolio-card-title">
+                  Mama Recipe
+                </CardTitle>
                 <CardText className="portfolio-card-text">
                   Tech Used :
                   <ul>
@@ -106,15 +131,22 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/Fe-HireJob-Next";
+              window.location.href =
+                'https://github.com/yohansky/Fe-HireJob-Next';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">Fullstack Web</CardHeader>
+              <CardHeader className="portfolio-card-header">
+                Fullstack Web
+              </CardHeader>
               <CardBody>
-                <p className="portfolio-card-city">Fiber(Golang), NextJS, PostgreSQL</p>
-                <CardTitle className="portfolio-card-title">Peworld Hiring</CardTitle>
+                <p className="portfolio-card-city">
+                  Fiber(Golang), NextJS, PostgreSQL
+                </p>
+                <CardTitle className="portfolio-card-title">
+                  Peworld Hiring
+                </CardTitle>
                 <CardText className="portfolio-card-text">
                   Tech Used :
                   <ul>
@@ -129,15 +161,20 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/Minicamp-Laravel1";
+              window.location.href =
+                'https://github.com/yohansky/Minicamp-Laravel1';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">Fullstack Web</CardHeader>
+              <CardHeader className="portfolio-card-header">
+                Fullstack Web
+              </CardHeader>
               <CardBody>
                 <p className="portfolio-card-city">Laravel(PHP), MySQL</p>
-                <CardTitle className="portfolio-card-title">E-Commerce Laravel</CardTitle>
+                <CardTitle className="portfolio-card-title">
+                  E-Commerce Laravel
+                </CardTitle>
                 <CardText className="portfolio-card-text">
                   Tech Used :
                   <ul>
@@ -152,15 +189,18 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/express-basic";
+              window.location.href =
+                'https://github.com/yohansky/express-basic';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
               <CardHeader className="portfolio-card-header">Backend</CardHeader>
               <CardBody>
                 <p className="portfolio-card-city">ExpressJS, MongoDB</p>
-                <CardTitle className="portfolio-card-title">Express REST API</CardTitle>
+                <CardTitle className="portfolio-card-title">
+                  Express REST API
+                </CardTitle>
                 <CardText className="portfolio-card-text">
                   <ul>
                     <li>Migration</li>
@@ -173,15 +213,18 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/SpringBoot-Backend-ems";
+              window.location.href =
+                'https://github.com/yohansky/SpringBoot-Backend-ems';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
               <CardHeader className="portfolio-card-header">Backend</CardHeader>
               <CardBody>
                 <p className="portfolio-card-city">Spring Boot, MySQL</p>
-                <CardTitle className="portfolio-card-title">Employee Management System </CardTitle>
+                <CardTitle className="portfolio-card-title">
+                  Employee Management System{' '}
+                </CardTitle>
                 <CardText className="portfolio-card-text">
                   <ul>
                     <li>Migration</li>
@@ -196,15 +239,16 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/Belajar-Docker2";
+              window.location.href =
+                'https://github.com/yohansky/Belajar-Docker2';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
               <CardHeader className="portfolio-card-header">Backend</CardHeader>
               <CardBody>
                 <p className="portfolio-card-city">Fiber(Golang), MySQL</p>
-                <CardTitle className="portfolio-card-title">Untitle E-Commerce REST API</CardTitle>
+                <CardTitle className="portfolio-card-title">GoCart</CardTitle>
                 <CardText className="portfolio-card-text">
                   {/* Work In Progress(WIP) <br /> */}
                   Tech Used :
@@ -236,15 +280,21 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
           <Col
             md="4"
             onClick={() => {
-              window.location.href = "https://github.com/yohansky/MERN-ecom";
+              window.location.href = 'https://github.com/yohansky/MERN-ecom';
             }}
-            style={{ cursor: "pointer" }}
+            style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">Full Stack</CardHeader>
+              <CardHeader className="portfolio-card-header">
+                Full Stack
+              </CardHeader>
               <CardBody>
-                <p className="portfolio-card-city">Express.JS, React.JS, MongoDB</p>
-                <CardTitle className="portfolio-card-title">ProShop</CardTitle>
+                <p className="portfolio-card-city">
+                  Express.JS, React.JS, MongoDB
+                </p>
+                <CardTitle className="portfolio-card-title">
+                  YohanShop
+                </CardTitle>
                 <CardText className="portfolio-card-text">
                   Work In Progress(WIP) <br />
                   Tech Used :
