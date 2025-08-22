@@ -267,7 +267,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>JWT authentication with HTTP-Only cookie</li>
                     <li>Creating custom authentication middleware</li>
                     <li>Integrating the Stripe API</li>
-                    <li>SMTP & Much more!</li>
+                    <li>SMTP</li>
                   </ul>
                 </CardText>
               </CardBody>
@@ -301,6 +301,11 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                   <ul>
                     <li>SPA(Single Page Application)</li>
                     <li>Migration</li>
+                    <li>PayPal integration</li>
+                  </ul>
+                  Features :
+                  <ul>
+                    <li></li>
                   </ul>
                 </CardText>
               </CardBody>
