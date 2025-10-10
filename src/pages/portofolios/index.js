@@ -1,21 +1,16 @@
 import { deletePortfolio } from '@/actions/portfolio';
 import BasePage from '@/components/BasePage';
 import BaseLayout from '@/components/layouts/BaseLayout';
-import PortfolioCard from '@/components/PortfolioCard';
-import PortfolioApi from '@/lib/api/portfolios';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import {
-  Row,
-  Col,
-  Button,
   Card,
-  CardHeader,
   CardBody,
-  CardTitle,
+  CardHeader,
   CardText,
-  ListGroupItemHeading,
-  List,
+  CardTitle,
+  Col,
+  Row,
 } from 'reactstrap';
 
 const Portfolios = ({ portfolios: initialPortfolios }) => {
@@ -268,6 +263,40 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>Creating custom authentication middleware</li>
                     <li>Integrating the Stripe API</li>
                     <li>SMTP</li>
+                  </ul>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Col>
+          {/* MERN E-Commerce */}
+          <Col
+            md="4"
+            onClick={() => {
+              window.location.href = 'https://github.com/yohansky/MERN-ecom';
+            }}
+            style={{ cursor: 'pointer' }}
+          >
+            <Card className="portfolio-card">
+              <CardHeader className="portfolio-card-header">
+                Full Stack
+              </CardHeader>
+              <CardBody>
+                <p className="portfolio-card-city">
+                  Express.JS, React.JS, MongoDB
+                </p>
+                <CardTitle className="portfolio-card-title">
+                  YohanShop
+                </CardTitle>
+                <CardText className="portfolio-card-text">
+                  Tech Used :
+                  <ul>
+                    <li>SPA(Single Page Application)</li>
+                    <li>Migration</li>
+                    <li>PayPal integration</li>
+                  </ul>
+                  Features :
+                  <ul>
+                    <li></li>
                   </ul>
                 </CardText>
               </CardBody>
