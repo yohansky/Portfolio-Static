@@ -305,11 +305,12 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
         </Row>
         <h1 className="page-header-title">Work In Progress</h1>
         <Row>
-          {/* MERN E-Commerce */}
+          {/* Booking App */}
           <Col
             md="4"
             onClick={() => {
-              window.location.href = 'https://github.com/yohansky/MERN-ecom';
+              window.location.href =
+                'https://github.com/yohansky/react-the-wild-oasis';
             }}
             style={{ cursor: 'pointer' }}
           >
@@ -319,22 +320,35 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               </CardHeader>
               <CardBody>
                 <p className="portfolio-card-city">
-                  Express.JS, React.JS, MongoDB
+                  Javascript, React.JS, Supabase
                 </p>
                 <CardTitle className="portfolio-card-title">
-                  YohanShop
+                  The Wild Oasis
                 </CardTitle>
                 <CardText className="portfolio-card-text">
                   Work In Progress(WIP) <br />
                   Tech Used :
                   <ul>
                     <li>SPA(Single Page Application)</li>
-                    <li>Migration</li>
-                    <li>PayPal integration</li>
+                    <li>React Router</li>
+                    <li>CSR (Client Side Rendering)</li>
+                    <li>Styled Components</li>
+                    <li>React Query (Remote state management)</li>
+                    <li>Context API (UI State management)</li>
+                    <li>React Hook Form (Form management)</li>
+                    <li>
+                      React icons / React hot toast / RRecharts / date-fns
+                    </li>
                   </ul>
                   Features :
                   <ul>
-                    <li></li>
+                    <li>Bookings</li>
+                    <li>Cabinss</li>
+                    <li>Guests</li>
+                    <li>Dashboard</li>
+                    <li>Check in and out</li>
+                    <li>App settings</li>
+                    <li>Authentication</li>
                   </ul>
                 </CardText>
               </CardBody>
