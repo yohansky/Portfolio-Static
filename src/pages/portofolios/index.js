@@ -372,6 +372,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>Gin Gonic</li>
                     <li>Gomock</li>
                     <li>Postgres</li>
+                    <li>Github CI</li>
                   </ul>
                 </CardText>
               </CardBody>
