@@ -303,7 +303,6 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
             </Card>
           </Col>
         </Row>
-        <h1 className="page-header-title">Work In Progress</h1>
         <Row>
           {/* Booking App */}
           <Col
@@ -326,7 +325,6 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                   The Wild Oasis
                 </CardTitle>
                 <CardText className="portfolio-card-text">
-                  Work In Progress(WIP) <br />
                   Tech Used :
                   <ul>
                     <li>SPA(Single Page Application)</li>
@@ -336,9 +334,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>React Query (Remote state management)</li>
                     <li>Context API (UI State management)</li>
                     <li>React Hook Form (Form management)</li>
-                    <li>
-                      React icons / React hot toast / RRecharts / date-fns
-                    </li>
+                    <li>React icons / React hot toast / Recharts / date-fns</li>
                   </ul>
                   Features :
                   <ul>
@@ -349,6 +345,33 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>Check in and out</li>
                     <li>App settings</li>
                     <li>Authentication</li>
+                  </ul>
+                </CardText>
+              </CardBody>
+            </Card>
+          </Col>
+        </Row>
+        <h1 className="page-header-title">Work In Progress</h1>
+        <Row>
+          {/* Backend Gin */}
+          <Col
+            md="4"
+            onClick={() => {
+              window.location.href = 'https://github.com/yohansky/gobank';
+            }}
+            style={{ cursor: 'pointer' }}
+          >
+            <Card className="portfolio-card">
+              <CardHeader className="portfolio-card-header">Backend</CardHeader>
+              <CardBody>
+                <p className="portfolio-card-city">Golang, Docker</p>
+                <CardTitle className="portfolio-card-title">GoBank</CardTitle>
+                <CardText className="portfolio-card-text">
+                  Tech Used :
+                  <ul>
+                    <li>Gin Gonic</li>
+                    <li>Gomock</li>
+                    <li>Postgres</li>
                   </ul>
                 </CardText>
               </CardBody>
