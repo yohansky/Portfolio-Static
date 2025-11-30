@@ -374,6 +374,7 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                     <li>Postgres</li>
                     <li>Github CI</li>
                     <li>JWT & Paseto</li>
+                    <li>Unit Test</li>
                   </ul>
                 </CardText>
               </CardBody>
