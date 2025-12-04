@@ -302,8 +302,6 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
               </CardBody>
             </Card>
           </Col>
-        </Row>
-        <Row>
           {/* Booking App */}
           <Col
             md="4"
