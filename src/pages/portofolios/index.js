@@ -240,9 +240,13 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
             style={{ cursor: 'pointer' }}
           >
             <Card className="portfolio-card">
-              <CardHeader className="portfolio-card-header">Backend</CardHeader>
+              <CardHeader className="portfolio-card-header">
+                Full Stack Web
+              </CardHeader>
               <CardBody>
-                <p className="portfolio-card-city">Fiber(Golang), MySQL</p>
+                <p className="portfolio-card-city">
+                  Fiber(Golang), ReactJS, NextJS, MySQL
+                </p>
                 <CardTitle className="portfolio-card-title">GoCart</CardTitle>
                 <CardText className="portfolio-card-text">
                   {/* Work In Progress(WIP) <br /> */}
@@ -296,7 +300,21 @@ const Portfolios = ({ portfolios: initialPortfolios }) => {
                   </ul>
                   Features :
                   <ul>
-                    <li></li>
+                    <li>Full featured shopping cart</li>
+                    <li>Product reviews and ratings</li>
+                    <li>Top products carousel</li>
+                    <li>Product pagination</li>
+                    <li>Product search feature</li>
+                    <li>User profile with orders</li>
+                    <li>Admin product management</li>
+                    <li>Admin user management</li>
+                    <li>Admin Order details page</li>
+                    <li>Mark orders as delivered option</li>
+                    <li>Checkout process (shipping, payment method, etc)</li>
+                    <li>
+                      PayPal / credit card integration Database seeder (products
+                      & users)
+                    </li>
                   </ul>
                 </CardText>
               </CardBody>
